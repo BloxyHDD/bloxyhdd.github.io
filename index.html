@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/style.css" rel="stylesheet">
+    <script src=/script.js"></script>
+    <title>BloxyHDD</title>
+
+</head>
+
+<body>
+    <h1 data-value="BLOXYHDD">BLOXYHDD</h1>
+
+    <p>(NOT MY GFX)</p>
+
+    <div class="links">
+    <a id="source-link" target="_blank" class="meta-link" href="https://www.youtube.com/channel/UCepTWp9mFsT4O3UEn81p0yA?sub_confirmation=1" target="_blank">
+        <i class="fa-solid fa-link"></i>
+        <span>Youtube Channel</span>
+      </a>
+      
+      <a id="yt-link" target="_blank" class="meta-link" href="https://www.roblox.com/users/615656680/profile" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+        <span>Roblox Profile</span>
+      </a>
+      <a id="yt-link" target="_blank" class="meta-link" href="https://www.roblox.com/groups/7181456/BadDog-Interactive#!/about" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+        <span>Roblox Group</span>
+      </a>
+      <a id="yt-link" target="_blank" class="meta-link" href="https://discord.gg/NXZGGkA4pG" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+        <span>Discord Server</span>
+      </a>
+      <a id="yt-link" target="_blank" class="meta-link" href="https://github.com/BloxyHDD" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+        <span>GitHub</span>
+      </a>
+    </div>
+
+    <script>
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        let interval = null;
+
+        document.querySelector("h1").onmouseover = event => {
+            let iteration = 0;
+
+            clearInterval(interval);
+
+            interval = setInterval(() => {
+                event.target.innerText = event.target.innerText
+                    .split("")
+                    .map((letter, index) => {
+                        if (index < iteration) {
+                            return event.target.dataset.value[index];
+                        }
+
+                        return letters[Math.floor(Math.random() * 26)]
+                    })
+                    .join("");
+
+                if (iteration >= event.target.dataset.value.length) {
+                    clearInterval(interval);
+                }
+
+                iteration += 1 / 3;
+            }, 30);
+        }
+
+    </script>
+</body>
+</html>
