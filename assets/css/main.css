@@ -13,10 +13,14 @@ html {
     background-color: #141414;
     color: #fff;
 
-    -webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
 }
 
 body {
@@ -45,7 +49,7 @@ section {
 h1 {
     margin: .70em 0;
     font-size: 2.5rem;
-    color:  white;
+    color: white;
 }
 
 figure {
@@ -4832,8 +4836,8 @@ a img {
 }
 
 #particles-js {
-background: #fff;
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fff;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: #fff;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f1f1f3, #ffffff);
@@ -4987,7 +4991,7 @@ background: #fff;
 #about {
     width: 90%;
     margin: 0 auto;
-    color:  white;
+    color: white;
     max-width: 960px
 }
 
@@ -5139,4 +5143,131 @@ background: #fff;
     text-decoration: none;
     margin: 0;
     color: #fff
+}
+
+.Model {
+    background-color: #212121;
+    border-radius: 12px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+
+
+
+
+.postcard {
+    color: white;
+    width: 800px;
+    height: 500px;
+    background-color: #222222;
+    margin: 0 auto;
+    border-radius: 12px;
+
+
+
+    padding-top: 7px;
+
+
+    box-shadow: 0.8em 0.8em 15px rgba(0, 0, 0, 0.3);
+    -ms-transform: rotate(2.5deg);
+    /* IE 9 */
+    -webkit-transform: rotate(2.5deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(2.5deg);
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: linear-gradient(60deg,
+            hsl(224, 85%, 66%),
+            hsl(269, 85%, 66%),
+            hsl(314, 85%, 66%),
+            hsl(359, 85%, 66%),
+            hsl(44, 85%, 66%),
+            hsl(89, 85%, 66%),
+            hsl(134, 85%, 66%),
+            hsl(179, 85%, 66%));
+}
+
+
+.postcard h1 {
+    text-align: center;
+    font-size: 5em;
+    color: #f7f7f7;
+    margin-bottom: -15px;
+    border-radius: 8px;
+
+}
+
+.postcard p {    display: inline;
+    font-size: 1.3em;
+}
+
+
+/*animation*/
+.postcard:hover,
+.postcard:active,
+.postcard:focus {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/*form*/
+input,
+textarea {
+    border: none;
+    border-radius: 8px;
+
+    height: 1.9em;
+    padding: 0.7em;
+    font-size: 1.3em;
+    font-family: "Varela Round", "Quicksand", sans-serif;
+}
+
+#sendMail{
+    border: none;
+    border-radius: 8px;
+
+    padding: 1em;
+    width: 50%;
+
+
+    font-size: 1.3em;
+    background-color: #131313;
+    font-family: "Varela Round", "Quicksand", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: rgb(114, 114, 114);
+}
+
+
+#address {
+    text-decoration: underline;
+}
+
+textarea {
+    border-radius: 8px;
+    overflow: auto;
+    resize: none;
+    height: 10em;
+    width: 90%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.push {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
 }
