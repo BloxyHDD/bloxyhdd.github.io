@@ -5234,6 +5234,11 @@ textarea {
     font-family: "Varela Round", "Quicksand", sans-serif;
 }
 
+
+input:focus,
+textarea:focus {
+    outline-color: rgb(114, 114, 114);
+}
 #sendMail{
     border: none;
     border-radius: 8px;
@@ -5245,11 +5250,6 @@ textarea {
     font-size: 1.3em;
     background-color: #131313;
     font-family: "Varela Round", "Quicksand", sans-serif;
-}
-
-input:focus,
-textarea:focus {
-    outline-color: rgb(114, 114, 114);
 }
 
 
